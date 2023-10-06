@@ -25,6 +25,9 @@ int main(int argc, char const *argv[])
 	t.meter("para que sirve apt en linux?"); //9
 	t.meter("como instalar programas desde codigo fuente en linux?");//10
 	t.meter("dime la estructura para crear un nodo en c++"); //11
+	t.meter("como configurar la red en linux?"); //12
+	t.meter("como crear un usuario en mariadb?");
+	t.meter("como crear una tabla en mariadb?");
 
 	string mensaje;
 	cout<<"Bievenido a Mar.io bot, En que puedo ayudarte? (recuerda escribir 'comandos' si no sabes como pedir algo)"<<endl<<endl;
@@ -280,6 +283,48 @@ int main(int argc, char const *argv[])
 
 					cout<<"De esta forma puedes crear un nodo en c++ que recibe datos de tipo entero :)"<<endl<<endl;
 					
+					break;
+				}
+			case 12:{
+					/*Como crear grupos en linux*/
+					cout<<bot;
+					cout<<"Okey, te mostrare como configurar la red en tu distribucion linux :) "<<endl<<endl;
+					break;
+				}
+			case 13:{
+					/*Como crear grupos en linux*/
+					cout<<bot;
+					cout<<"Para crear un usuario en mariadb puedes seguir los siguientes comandos en tu SGBD"<<endl<<endl;
+					cout<<"\nCREATE USER 'miusuario'@'%' IDENTIFIED BY 'mipassword';"<<endl<<endl;
+					cout<<"El simbolo '\%' indica que todas personas pueden entrar a tu base de datos"<<endl;
+					cout<<"Tambien podrias poner una direccion IP, por ejemplo: "<<endl<<endl;
+					cout<<"\nCREATE USER 'miusuario'@'192.168.100.' IDENTIFIED BY 'mipassword';"<<endl<<endl;
+					cout<<"\nO si lo prefieres, puedes configurar que solo se pueda usar de manera local escribiendo lo siguiente:"<<endl;
+					cout<<"\nCREATE USER 'miusuario'@localhost IDENTIFIED BY 'mipassword';"<<endl<<endl;
+					cout<<"Despues de tener tu usuario creado, debes asignarle permisos, esto lo puedes hacer escribiendo:"<<endl<<endl;
+					cout<<"GRANT ALL ON *.* TO 'miusuario'@'%';"<<endl<<endl;
+					cout<<"Recuerda que los permisos aun tiene muchas opciones, puedes personalizarlo de acuerdo a lo que necesites :)"<<endl<<endl;
+					break;
+				}
+			case 14:{
+					/*Como crear grupos en linux*/
+					cout<<bot;
+					cout<<"Crear una tabla en mariaDB es muy sencillo, puedes usar el siguente ejemplo con su explicacion para crear tus propias tablas:"<<endl<<endl;
+					cout << "CREATE TABLE nombreTabla(\n"
+	                 "\tNombreColumna tipo_de_dato,\n"
+	                 "\tNombreColumna tipo_de_dato,\n"
+	                 "\tNombreColumna tipo_de_dato,\n"
+	                 "\tNombreColumna tipo_de_dato,\n"
+                 	"\t);" <<endl<<endl;
+
+                 	cout << "CREATE TABLE datosPersonales(\n"
+	                 "\tprimerNombre char(50),\n"
+	                 "\t apellidoPaterno char(50),\n"
+	                 "\t apellidoMaterno char(50),\n"
+	                 "\t edad int,\n"
+	                 "\t mayorEdad bool,\n"
+                 	"\t);" <<endl<<endl;
+                 	cout<<"Asi es como puedes crear una tabla en mariadb :)"<<endl<<endl;
 					break;
 				}
 			}
